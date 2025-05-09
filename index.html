@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Learner Sphere</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Learner Sphere</h1>
+    <h3>IMPROVE YOUR ENGLISH, MATHS AND HINDI SKILLS WITH US</h3>
+    <p>
+      Get ahead in Maths, English and Hindi with us with our customised study plans, live mentoring sessions, and interactive sessions for continuous practice.
+    </p>
+    <div class="tab-buttons">
+      <button onclick="showTab('english')">ENGLISH</button>
+      <button onclick="showTab('hindi')">HINDI</button>
+      <button onclick="showTab('math')">MATHEMATICS</button>
+    </div>
+
+    <div id="english" class="tab-content">
+      <button class="back" onclick="hideTabs()">Back</button>
+      <h4>Enhance your vocabulary!</h4>
+      <h5>Vocabulary List</h5>
+      <p><strong>Abundant:</strong> Available in large quantities</p>
+      <p><strong>Meticulous:</strong> Showing great attention to detail</p>
+      <div class="admin-login">
+        <input type="password" id="adminPassword" placeholder="Admin Password" />
+        <button>Login as Admin</button>
+      </div>
+      <div id="adminSection">
+      <h3>Add New Word</h3>
+      <form id="vocabForm">
+        <input type="text" id="word" placeholder="Word" required>
+        <input type="text" id="meaning" placeholder="Meaning" required>
+ <input type="text" id="example" placeholder="Example" required>
+        <button                type="submit">Add</button>
+    </div>
+
+    <div id="hindi" class="tab-content">
+      <button class="back" onclick="hideTabs()">Back</button>
+      <h4>Coming soon...</h4>
+    </div>
+
+    <div id="math" class="tab-content">
+      <button class="back" onclick="hideTabs()">Back</button>
+      <h4>Practice quizzes and worksheets coming soon!</h4>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
